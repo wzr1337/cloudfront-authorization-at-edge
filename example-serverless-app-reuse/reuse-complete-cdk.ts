@@ -23,6 +23,11 @@ const authAtEdge = new sam.CfnApplication(stack, "AuthorizationAtEdge", {
   },
   parameters: {
     EmailAddress: "johndoe@example.com",
+    //UserPoolArn: <yourUserPoolArn>,  // if existing userpool shall be used
+    //UserPoolClientId: <yourUserPoolClientId>, // if existing userpool shall be used
+    //EnableSPAMode: "true" | "false",
+    //CreateCloudFrontDistribution: "true" | "false",
+    //OAuthScopes: "phone, email, profile, openid"
   },
 });
 
